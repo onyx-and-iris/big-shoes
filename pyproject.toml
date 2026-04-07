@@ -4,20 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-    "dearpygui>=2.2",
-    "pywin32>=311",
-    "pywin32-ctypes>=0.2.3",
-]
+dependencies = ["dearpygui>=2.2", "pywin32>=311", "pywin32-ctypes>=0.2.3"]
 
 [project.scripts]
 big-shoes = "big_shoes.gui.main:main"
 
 [dependency-groups]
-dev = [
-    "poethepoet>=0.44.0",
-    "pyinstaller>=6.19.0",
-]
+dev = ["poethepoet>=0.44.0", "pyinstaller>=6.19.0"]
 
 [tool.poe.tasks]
 build = "pyinstaller --distpath dist/ spec/big_shoes.spec"
@@ -29,6 +22,10 @@ release = ["build", "_compress"]
 clean.shell = "Remove-Item -Recurse -Force build/*, dist/*"
 clean.interpreter = "pwsh"
 
+[tool.hatch.build.targets.wheel]
+sources = { "src" = "" }
+include = ["src/big_shoes", "src/bundle", "src/img"]
+
 [build-system]
-requires = ["uv_build>=0.11.3,<0.12.0"]
-build-backend = "uv_build"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
