@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = ["dearpygui>=2.2", "pywin32>=311", "pywin32-ctypes>=0.2.3"]
 
+# If we don't need the console this could be [project.gui-scripts] instead.
 [project.scripts]
 big-shoes = "big_shoes.gui.main:main"
 
