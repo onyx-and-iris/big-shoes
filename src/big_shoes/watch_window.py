@@ -3,7 +3,7 @@ import time
 
 from dearpygui import dearpygui as dpg
 
-import hook
+from . import hook
 
 
 class WatchWindow:

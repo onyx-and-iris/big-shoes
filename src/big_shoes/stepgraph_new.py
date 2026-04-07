@@ -4,9 +4,9 @@ from enum import Enum, auto
 
 from dearpygui import dearpygui as dpg
 
-import constants
-import hook
-from main_window import center, show_error
+from . import constants
+from . import hook
+from .util import center, show_error
 
 WIDTH = 150
 WIDTH_DIVISION = 4

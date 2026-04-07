@@ -10,7 +10,7 @@ import copy
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from main_window import MainWindow
+    from big_shoes.main_window import MainWindow
 
 CTRL = pygame.K_LCTRL | pygame.K_RCTRL
 

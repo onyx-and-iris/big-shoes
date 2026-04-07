@@ -3,8 +3,8 @@ import time
 
 from dearpygui import dearpygui as dpg
 
-import constants
-import hook
+from . import constants
+from . import hook
 
 
 class FormationListWindow:

@@ -9,7 +9,7 @@ import win32con
 import win32process
 import win32security
 
-import constants
+from . import constants
 
 # from main_window import show_error
 

@@ -7,7 +7,7 @@ from PySide6.QtWidgets import QDialog, QVBoxLayout, QTableWidget, QAbstractItemV
 import constants
 
 if TYPE_CHECKING:
-    from main_window import MainWindow
+    from big_shoes.main_window import MainWindow
 
 
 class FormationExtrapolator(QDialog):

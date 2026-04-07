@@ -1,9 +1,10 @@
 import csv
 import enum
 import math
-
 from os import path
-bundle_dir = path.abspath(path.dirname(__file__))
+from pathlib import Path
+
+bundle_dir = Path(__file__).parents[1] / "bundle"
 
 RNG = [177, 202, 238, 108, 90, 113, 46, 85, 214, 0, 204, 153, 144, 107, 125, 235, 79, 160, 7, 172, 223, 138, 86, 158,
        241, 154, 99, 117, 17, 145, 163, 184, 148, 115, 247, 84, 217, 110, 114, 192, 244, 128, 222, 185, 187, 141, 102,

@@ -1,4 +1,3 @@
-from typing import TYPE_CHECKING
 
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QDialog, QVBoxLayout, QHeaderView, QAbstractItemView, QTableWidget, QTableWidgetItem, \
@@ -7,7 +6,7 @@ from PySide6.QtWidgets import QDialog, QVBoxLayout, QHeaderView, QAbstractItemVi
 import constants
 
 if TYPE_CHECKING:
-    from main_window import MainWindow
+    from big_shoes.main_window import MainWindow
 
 
 class FormationTypeList(QDialog):
